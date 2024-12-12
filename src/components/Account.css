@@ -1,0 +1,84 @@
+/* src/components/Account.css */
+
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff; /* White background */
+}
+
+.account-box {
+  background-color: #222; /* Black background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.account-box h2 {
+  color: white; /* Yellow color */
+  margin-bottom: 1.5rem;
+}
+
+.account-input {
+  width: calc(100% - 2rem); /* Ensure equal padding from left and right */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.account-input::placeholder {
+  color: #bbb; /* Light grey placeholder text */
+}
+
+.account-button {
+  width: calc(100% - 2rem); /* Ensure equal padding from left and right */
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.account-button:hover {
+  background-color: #ffcc00; /* Yellow background on hover */
+  color: #000; /* Black text on hover */
+}
+
+.toggle-button {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #fff; /* White text */
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.toggle-button:hover {
+  color: #ffcc00; /* Yellow text on hover */
+}
+
+.error-message {
+  color: #dc3545;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffd2d2;
+  border-radius: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+  .account-box {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+/* Ensure this has higher specificity */
+.product-card button {
+  background-color:   #f0ad4e !important; /* Add !important if needed */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color:  #ec971f !important;
+}
+
+
+@media (max-width: 768px) {
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 12px;
+  }
+
+  .product-card button {
+    padding: 8px 16px;
+  }
+}

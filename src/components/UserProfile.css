@@ -1,0 +1,71 @@
+/* src/components/UserProfile.css */
+.user-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-field {
+    margin-bottom: 20px;
+  }
+  
+  .profile-field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-profile button {
+    padding: 10px 20px;
+    background-color:   black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .user-profile .logout-button {
+    background-color:   red;
+  }
+  
+  .user-profile button:hover {
+    background-color:  dimgray;
+  }
+  
+  .user-profile .logout-button:hover {
+    background-color:  darkred ;  
+  }
+  
+
+  @media (max-width: 768px) {
+    .user-profile {
+      padding: 10px;
+    }
+  
+    .user-profile h2 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-field input {
+      padding: 8px;
+    }
+  
+    .user-profile button {
+      padding: 8px 16px;
+    }
+  }  

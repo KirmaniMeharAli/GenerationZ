@@ -1,0 +1,66 @@
+/* Styling for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  position: sticky;  /* Make the navbar sticky */
+  top: 0;  /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensures that the header stays above other content */
+  width: 97%; /* Ensure it stretches across the full width of the page */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow to the sticky navbar */
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(247, 246, 246, 0.801); /* White text color */
+  text-shadow: 
+    1px 1px 0 #000,   /* Top left shadow (black) */
+    -1px -1px 0 #000, /* Bottom right shadow (black) */
+    1px -1px 0 #000,  /* Top right shadow (black) */
+    -1px 1px 0 #000;  /* Bottom left shadow (black) */
+}
+
+/* Styling for the navigation links */
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #f1c40f;  /* Color change on hover */
+}
+
+.logout-button{
+                 background-color: #f1c40f;
+                 cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}

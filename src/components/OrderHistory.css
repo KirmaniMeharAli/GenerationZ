@@ -1,0 +1,61 @@
+/* src/components/OrderHistory.css */
+.order-history-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-history-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-history-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.order-history-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.order-history-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.order-history-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.order-history-item ul li {
+  margin: 5px 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .order-history-container {
+    padding: 10px;
+  }
+
+  .order-history-item h3 {
+    font-size: 1rem;
+  }
+
+  .order-history-item p {
+    font-size: 0.9rem;
+  }
+}
